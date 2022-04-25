@@ -1,16 +1,18 @@
 /* RESET CSS */
 * { padding: 0; margin: 0;}
+
+/* ADICIONANDO COR DE FUNDO */
 body{
     background-color: #222222;
     background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
 }
-/* FUNDO */
-canvas { background: #eee; display: block; margin: 0 auto; }
+/* QUADRO DO GAME */
+canvas { background: rgb(231, 226, 226); display: block; margin: 0 auto; }
 
 /* IMPORTANDO FONTE EXTERNA */
 @font-face {
     font-family: "Gameplay";
-    src: url("./Gameplay.ttf");
+    src: url("../fonts/Gameplay.ttf");
 }
 
 /* UTILIZAND VARIÁVEIS PARA DIMINUIR REPETIÇÕES */
@@ -20,20 +22,7 @@ canvas { background: #eee; display: block; margin: 0 auto; }
     --text-white: #fff;
 }
 
-#text{
-    font-family: "Gameplay";
-    font-size: 2.2em;
-    color: var(--text-end-game);
-    text-align: center;
-    margin-top: 15px;
-}
-.container{
-    position: relative;
-    top: 190px;
-    width: 600;
-    margin: 0 auto;
-}
-
+/* TITLE GAME */
 .row h4{
     font-family: "Gameplay";
     position: relative;
@@ -43,6 +32,24 @@ canvas { background: #eee; display: block; margin: 0 auto; }
     text-align: center;
 }
 
+/* CONTAINER */
+.container{
+    position: relative;
+    top: 190px;
+    width: 600;
+    margin: 0 auto;
+}
+
+/* TEXT FINALLY */
+#text{
+    font-family: "Gameplay";
+    font-size: 2.2em;
+    color: var(--text-end-game);
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* FOOTER */
 footer{
     text-align: center;
 }
