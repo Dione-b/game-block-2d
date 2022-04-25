@@ -1,5 +1,67 @@
 /* RESET CSS */
-* { padding: 0; margin: 0; }
-
+* { padding: 0; margin: 0;}
+body{
+    background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
 /* FUNDO */
 canvas { background: #eee; display: block; margin: 0 auto; }
+
+/* IMPORTANDO FONTE EXTERNA */
+@font-face {
+    font-family: "Gameplay";
+    src: url("./Gameplay.ttf");
+}
+
+/* UTILIZAND VARIÁVEIS PARA DIMINUIR REPETIÇÕES */
+:root {
+    --theme-game: #0095DD;
+    --text-end-game: rgb(230, 5, 5);
+    --text-white: #fff;
+}
+
+#text{
+    font-family: "Gameplay";
+    font-size: 2.2em;
+    color: var(--text-end-game);
+    text-align: center;
+    margin-top: 15px;
+}
+.container{
+    position: relative;
+    top: 190px;
+    width: 600;
+    margin: 0 auto;
+}
+
+.row h4{
+    font-family: "Gameplay";
+    position: relative;
+    top: 180px;
+    font-size: 3em;
+    color: var(--theme-game);
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+footer span {
+    font-family: "Gameplay";
+    position: relative;
+    top: 500px;
+    color: var(--text-white);
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--theme-game);
+    
+}
+
+footer a:hover{
+    color: var(--theme-game);
+    text-shadow: 0px 0px 10px #FFFFFF, 0px 0px 10px #FFFFFF, 0px 0px 10px #FFFFFF, 0px 0px 10px #FFFFFF, 0px 0px 10px #FFFFFF, 0px 0px 10px #FFFFFF;
+}
