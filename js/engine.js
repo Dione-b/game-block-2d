@@ -89,7 +89,7 @@ function collisionDetection() {
           score++;
           if(score == brickRowCount*brickColumnCount) {
             text.innerHTML = "ACERTOU!!!" // adicionado campo para informar o usuário que ele perdeu
-            text.style.color = "blue";
+            text.style.color = "white";
             canvas.onanimationcancel(); // funcão que para toda a animação
           }
         }
