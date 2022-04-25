@@ -34,6 +34,7 @@ var brickOffsetLeft = 55;
 
 // Criando score
 var score = 0;
+
 // Vidas 
 var lives = 1;
 
